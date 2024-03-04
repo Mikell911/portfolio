@@ -200,9 +200,9 @@
                     </h2>
 
                     <div class="contact__row">
-                        <form class="form">
+                        <form class="form" name="contact" netlify>
                             <div class="form__container-input">
-                                <input type="text" id="name" class="form__input" required>
+                                <input type="text" id="name" name="name" class="form__input" required>
                                 <label for="name" class="form__label">
                                     Your name
                                 </label>
@@ -210,7 +210,7 @@
                             </div>
 
                             <div class="form__container-input">
-                                <input type="email" id="email" class="form__input" required>
+                                <input type="email" id="email" name="email" class="form__input" required>
                                 <label for="email" class="form__label">
                                     Email
                                 </label>
@@ -219,14 +219,14 @@
 
                             <div class="form__container-input">
                                 <label>
-                                    <textarea rows="1" class="form__textarea" required></textarea>
+                                    <textarea rows="1" class="form__textarea" name="text" required></textarea>
                                 </label>
                                 <label for="email" class="form__label">
                                     How can I help?
                                 </label>
                             </div>
 
-                            <button class="btn form__btn">Get In Touch</button>
+                            <button class="btn form__btn" type="submit">Get In Touch</button>
                         </form>
 
                         <div class="contact__content">
