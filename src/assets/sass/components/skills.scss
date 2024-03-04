@@ -1,0 +1,30 @@
+.skills {
+  color: $white;
+  &__container {
+    padding: 40rem 0;
+  }
+  &__row {
+    margin-top: 60rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    border: 1rem solid $white;
+    width: 100%;
+    height: 100%;
+    max-width: 180rem;
+    padding: 40rem 25rem;
+    transition: all 1s;
+  }
+  &__item-title{
+    font: $text-fonts;
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  padding: 20rem 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    color: $white;
+    font: $text-fonts;
+  }
+}

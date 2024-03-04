@@ -1,0 +1,99 @@
+html {
+  font-size: 1px;
+  scroll-behavior: smooth;
+}
+body {
+  cursor: none;
+}
+.wrapper {
+  background-color: $blue;
+  color: $white;
+  font: $text-fonts;
+  overflow: hidden;
+}
+.container {
+  max-width: 1400rem;
+  margin: 0 auto;
+  padding: 0 20rem;
+}
+.title {
+  font: $title-fonts;
+  color: $white;
+  text-align: center;
+  text-shadow: 0 0 80rem rgb(255, 255, 255);
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+.logo {
+  font: $logo-fonts;
+  color: $white;
+  text-transform: uppercase;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.--orange {
+  color: $orange;
+}
+
+.with-shadow {
+  box-shadow: 0 0 20rem 3rem rgba(255, 153, 0, 1);
+}
+
+.circle {
+  position: absolute;
+  height: 250rem;
+  width: 250rem;
+  border-radius: 500%;
+  background-color: $orange;
+  top: 80rem;
+  left: 0;
+  transform: translateX(-50%) scale(1);
+  animation: move_circle 10s linear infinite;
+}
+
+@keyframes move_circle {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.9);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.cursor {
+  position: absolute;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+
+}
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(3);
+  transition: transform 250ms ease-in-out;
+}
+
+.outer {
+  border: 1rem solid #f7f7f770;
+}
+
+.inner {
+  background: rgba(252, 250, 250, 0.13);
+  transition: 150ms ease-out;
+}
+.inner.hover {
+  background: $orange;
+  mix-blend-mode: difference;
+}
